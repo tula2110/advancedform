@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Register</h1>
+    <form id="registrationForm">
+        <table>
+            <tr>
+                <th>Full Name:</th>
+                <td>
+                    <input type="text" id="fullName" required>
+                    <div class="error" id="nameError"></div>
+                </td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td>
+                    <input type="email" id="email" required>
+                    <div class="error" id="emailError"></div>
+                </td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td>
+                    <input type="password" id="password" required>
+                    <div class="error" id="passwordError"></div>
+                </td>
+            </tr>
+            <tr>
+                <th>Confirm Password:</th>
+                <td>
+                    <input type="password" id="confirmPassword" required>
+                    <div class="error" id="confirmPasswordError"></div>
+                </td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female" required> Female
+                    <div class="error" id="genderError"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="button" onclick="validateForm()">Register</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="script4.js"></script>
+</body>
+</html>
